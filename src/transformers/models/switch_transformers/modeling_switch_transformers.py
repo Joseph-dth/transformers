@@ -1463,6 +1463,7 @@ class SwitchTransformersForConditionalGeneration(SwitchTransformersPreTrainedMod
     def __init__(self, config: SwitchTransformersConfig):
         super().__init__(config)
         self.model_dim = config.d_model
+        print("haha it is the JY version of MoE!!")
 
         self.shared = nn.Embedding(config.vocab_size, config.d_model)
 
